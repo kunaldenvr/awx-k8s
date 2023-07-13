@@ -1,0 +1,9 @@
+apiVersion: awx.ansible.com/v1beta1
+kind: AWX
+metadata:
+  name: ansible-awx
+  namespace: awx
+spec:
+  service_type: nodeport
+  nodeport_port: 31949  # Replace with your desired NodePort value
+  postgres_storage_class: local-storage
